@@ -1,0 +1,1 @@
+<footer>&copy; [Pieter Huisman] <?= date('Y') ?></footer>

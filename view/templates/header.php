@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,15 +8,14 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 	
 	<link rel="stylesheet" href="<?= URL ?>/css/style.css">
 </head>
-
 <body>
-	<div id="container">
-		<nav>
-			<ul>
-				<li><a href="<?= URL ?>Planningstool/index"><i class="fas fa-users"></i></a></li>
-				<li><a href="<?= URL ?>Planningstool/create"><i class="fas fa-user-plus"></i></a></li>
-			</ul>
-		</nav>
+<div id="container">
+<nav>
+	<ul>
+		<li><a href="<?=URL?>Planningstool/index"><i class="fas fa-users"></i></a></li>
+		<li><a href="<?=URL?>Planningstool/create"><i class="fas fa-user-plus"></i></a></li>
+	</ul>
+</nav>

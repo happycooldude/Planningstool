@@ -105,8 +105,14 @@ header .backbutton {
 footer {
     margin-top: 10px;
     text-align: center;
+    width: 50%;
 }
 
 ul{
     text-decoration: none;
+}
+
+img{
+    height: 200px;
+    width: 300px;
 }

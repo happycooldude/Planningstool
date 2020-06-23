@@ -2,20 +2,24 @@
 	<ul>
 			<?php
 			foreach ($data as $games) {
-				echo "<li>";
-				echo "De spelers zijn ", ($games["players"]),"<br>";
-				echo "De uitlegger is ",($games["explainer"]),"<br>";
-				echo "De duur van het spel is ",($games["play_minutes"]), " minuten","<br>";
-				echo "De starttijd is om ",($games["time"]),"<br>";
+				echo "<h1>";
+				echo $games["name"];
+				echo "</h1>";
 				?>
-				
-				<? echo $games["name"]; ?>
+				<br>
+				<h4>Startijd = <? echo $games["time"]; ?></h4>
+				<h4>Speltijd = <? echo $games["play_minutes"];?> minuten</h4>
+				<h4>Spelers = <? echo $games["players"]; ?></h4>
+				<h4>Uitlegger = <? echo $games["explainer"]; ?></h4>
+
+				<br>
 				<a href="<? echo URL?>Planningstool/edit/<? echo $games["id"];?>">Bewerk</a>
-                <a href="<? echo URL?>Planningstool/delete/<? echo $games["id"];?>">Verwijder</a><br>
-				<img src="<?= URL ?>public/pictures/<?=$data["image"]?>" alt="image not found">
+				<a href="<? echo URL?>Planningstool/delete/<? echo $games["id"];?>">Verwijder</a>
+				<img src="<? echo URL?>/pictures/<?echo $games["image"]?>" alt="image not found">
 				<?
-				echo "</li>";
+				
 			}
+			
 			// de opbouw van de link bepaald welke method in welke controller aangeroepen wordt.
 			// het woordje "employee" in de url betekent dat het framework moet zoeken naar een controller genaamd "EmployeeController".
 			// Hij maakt van de eerste letter een hoofdletter en plakt er zelf "Controller" achter.
